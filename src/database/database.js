@@ -29,7 +29,7 @@ export class Database {
     this.#persist()
   }
 
-  select(table) {
+  select(table, filters) {
     let data = this.#database[table] ?? []
     return data
 
